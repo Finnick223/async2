@@ -1,0 +1,51 @@
+/* Add styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    font-size: clamp(0.8rem, 0.5rem + 1vw, 1.2rem);
+  }
+body {
+    height: 100%;
+    width: 100%;
+    background-color:silver;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    gap: 1em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.user {
+    padding: 2%;
+    margin: 2%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(105, 90, 205, 0.5);
+    flex-direction: column;
+    border-radius: 20px;
+    border: solid black 1px;
+}
+li {
+    list-style:decimal;
+}
+.posttitle {
+    /* white-space: nowrap; */
+    overflow: hidden;
+    animation: animate 0.4s ease-out forwards;
+}
+@keyframes animate {
+    0% { 
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
