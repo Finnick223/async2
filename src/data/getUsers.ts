@@ -6,3 +6,5 @@ export const getUsers = () => {
     })
     .catch(console.error);
 };
+
+module.exports = getUsers;
